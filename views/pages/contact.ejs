@@ -1,0 +1,68 @@
+<%- include('../partials/header') %>
+<div class="container">
+    <form>
+        <fieldset id="perinfo">
+            <legend><strong>Personal Information</strong></legend>
+               <div>
+                <!--Using a text options for all the sections of personal information.-->
+                             <label for="fname">First Name</label>
+                             <input type="text" name="fname" id="fname" placeholder="John" required maxlength="30">
+            </div>
+            <div>
+                <!--Using a text options for all the sections of personal information.-->
+                             <label for="lname">Last Name</label>
+                             <input type="text" name="lname" id="lname" required maxlength="30">
+            </div>
+            <div>
+                <!--Using a tel options for phone number.-->
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required>
+              </div>
+            <div>
+              <h4>Billing Address</h4>
+              <div>
+  <!--                Using a number option for the unit number of the house.-->
+                            <label for="unit">Unit Number</label>
+                            <input type="number" name="unit" id="unit" required>
+              </div>
+              <div>
+            <div>
+                <!--                Using a text option for the street name.-->
+                            <label for="street">Street Name</label>
+                            <input id="street" type="text" name="street" required>
+            </div>
+            <div>
+            </div>
+            <div>
+                            <label for="province">Province</label>
+                            <select id="province" name="province">
+  <!--                            Using a dropdown option to choose the province.-->
+                                <option value="choose">choose…</option>
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Colombia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NL">Newfoundland</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="NV">Nunavut</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="PQ">Québec</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="YK">Yukon Territory</option>
+                            </select>
+            </div>
+            <div>
+                        <label for="pcode">Postal Code</label>
+                        <input type="text" name="pcode" id="pcode" placeholder="1A1A1A" maxlength="6" required>
+            </div>
+        </fieldset>
+                        <input type="submit" value="Confirm">
+        </form>
+        <img src="../pages/Image.jpg">
+        <p>Hey Everybody!! <b>Sodvadiya Vidhi</b> Here. I live in Barrie and I am pursuing Computer Programming. This is my last semester and I am
+            super excited for this one. I work part-time as a Cashier at Mucho Burrito. I love to cook in my spare time.
+        </p>
+</div>
+<%- include('../partials/footer') %>
