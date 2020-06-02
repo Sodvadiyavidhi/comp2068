@@ -6,6 +6,7 @@ const path = require('path');
 // Set our views directory
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.use('/images', express.static('assets/images'));
 
 // Our routes
 const routes = require('./routes.js');
